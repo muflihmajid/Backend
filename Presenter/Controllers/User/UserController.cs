@@ -21,7 +21,7 @@ namespace SceletonAPI.Presenter.Controllers.Register {
         [HttpPost]
         [Route ("/user/login")]
         [ProducesResponseType (StatusCodes.Status200OK)]
-        public async Task<ActionResult<RegisterUserDto>> login ([FromBody] RegisterUserCommand Payload) {
+        public async Task<ActionResult<RegisterUserDto>> Login ([FromBody] RegisterUserCommand Payload) {
             return Ok (await Mediator.Send (Payload));
         }
     }
