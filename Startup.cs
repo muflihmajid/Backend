@@ -54,7 +54,7 @@ namespace SceletonAPI
             services.AddDbContext<IDBContext, DBContext>(options =>
                options
                .UseLazyLoadingProxies()
-               .UseSqlServer(Configuration.GetConnectionString("WADatabase")));
+               .UseSqlServer(Configuration.GetConnectionString("Databaselocal")));
             // mapper
             var mappingConfig = AuthmapperFunction(services);
             services.AddSingleton(mappingConfig.CreateMapper());
