@@ -9,6 +9,6 @@ namespace SceletonAPI.Domain.Infrastructures
         public DateTime? CreateDate { set; get; }
         public string LastUpdateBy { set; get; }
         public DateTime? LastUpdateDate { set; get; }
-        public int? RowStatus { set; get; }
+        public bool? RowStatus { set; get; }
     }
 }

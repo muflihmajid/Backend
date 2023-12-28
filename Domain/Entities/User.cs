@@ -1,10 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using SceletonAPI.Domain.Infrastructures;
 
 namespace SceletonAPI.Domain.Entities
 {
-    public class User : BaseEntity
+    public class User
     {
         public string Email { set; get; }
         public string Phone { set; get; }
